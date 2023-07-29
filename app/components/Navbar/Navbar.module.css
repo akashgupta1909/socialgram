@@ -1,0 +1,82 @@
+.wrapper {
+  display: flex;
+  padding: 2.5rem 5.5rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 15;
+  background: var(--theme-blue);
+}
+.leftComponent {
+  font-size: var(--font-25);
+  font-weight: bold;
+}
+.centerComponent input {
+  width: 30rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding: 1.5rem 1rem;
+  font-size: var(--font-16);
+  color: var(--pure-white);
+  background: var(--theme-secondary-blue);
+  backdrop-filter: blur(125px);
+}
+.rightComponent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.rightComponentAssets {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.imageWrapper {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.newPostWrapper {
+  font-size: var(--font-16);
+  cursor: pointer;
+  border-radius: 1rem;
+  background: var(--post-bg);
+  padding: 0.5rem 1rem;
+}
+@media only screen and (max-width: 850px) {
+  .wrapper {
+    padding: 2.5rem 1rem;
+  }
+  .centerComponent input {
+    width: 20rem;
+    font-size: var(--font-13);
+  }
+  .leftComponent {
+    font-size: var(--font-20);
+  }
+  .newPostWrapper {
+    font-size: var(--font-13);
+  }
+  .rightComponentAssets {
+    gap: 1rem;
+  }
+  .imageWrapper {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .centerComponent {
+    display: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .rightComponentAssets {
+    display: none;
+  }
+}

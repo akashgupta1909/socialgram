@@ -1,0 +1,21 @@
+.hamburgerMenuWrapper {
+  position: relative;
+  display: none;
+}
+.sideMenuWrapper {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 5rem;
+  background: var(--bg-blue);
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+@media only screen and (max-width: 650px) {
+  .hamburgerMenuWrapper {
+    display: block;
+  }
+  .sideMenuWrapperOpen {
+    display: block;
+  }
+}

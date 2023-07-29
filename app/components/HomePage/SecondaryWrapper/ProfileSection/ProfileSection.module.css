@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.profilePicture {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.fullNameWrapper {
+  font-size: var(--font-20);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.verifiedIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.userNameWrapper {
+  font-size: var(--font-15);
+  color: var(--grey-1);
+}
+.descriptionWrapper {
+  font-size: var(--font-14);
+  text-align: center;
+  max-width: min(100%, 60rem);
+}
+.followersWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: var(--font-18);
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.followersWrapper div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  background: var(--profile-blue);
+  padding: 0.5rem 1rem;
+}
+.followersWrapper div > .followersIcon {
+  width: 2rem;
+  height: 2rem;
+}
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.button {
+  background-color: var(--profile-blue);
+  outline: none;
+  border: none;
+  color: var(--pure-white);
+  font-size: var(--font-16);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

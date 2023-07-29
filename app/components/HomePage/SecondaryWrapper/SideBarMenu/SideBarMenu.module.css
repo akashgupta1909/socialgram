@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+  font-size: var(--font-16);
+  gap: 1.6rem;
+  cursor: pointer;
+}
+.menuItemIcon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.activeItem {
+  border-radius: 0.3rem;
+  background: var(--bg-blue);
+  border-bottom: 0.3rem solid var(--pure-white);
+}
