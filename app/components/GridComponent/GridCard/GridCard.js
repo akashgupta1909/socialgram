@@ -71,14 +71,16 @@ const GridCard = ({
       <div className={styles.gridItemCaption}>
         <div className={styles.upperWrapper}>
           <div className={styles.profilePictureWrapper}>
-            <div className={styles.profileImageWrapper}>
-              <Image
-                src={profilePicture}
-                alt="Profile Picture"
-                className={styles.profilePicture}
-                fill={true}
-              />
-            </div>
+            <Link href={`/user/${userName}`}>
+              <div className={styles.profileImageWrapper}>
+                <Image
+                  src={profilePicture}
+                  alt="Profile Picture"
+                  className={styles.profilePicture}
+                  fill={true}
+                />
+              </div>
+            </Link>
             <div>
               <Link href={`/user/${userName}`}>
                 <div className={styles.userName}>@{userName}</div>

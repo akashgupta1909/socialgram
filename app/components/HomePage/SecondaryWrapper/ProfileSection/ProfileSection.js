@@ -27,6 +27,9 @@ const ProfileSection = ({ isUserProfile, userData }) => {
     );
   });
 
+  if (userData?.errors && userData?.errors[0]=== "Couldn't find User")
+    return <div className={styles.invalidUser}>User not found</div>;
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.profilePictureWrapper}>
